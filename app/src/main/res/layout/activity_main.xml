@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:hint="用于显示语音识别后的文字"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <Button
+        android:id="@+id/main_btn_startSpeak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="点击说话"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/main_et_needToHeCheng"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:hint="在此输入需要语音合成的文本"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/main_btn_startHeCheng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="开始语音合成"
+        android:textColor="@android:color/white" />
+    
+    <TextView
+        android:id="@+id/result"
+        android:text="用于显示匹配结果"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:textSize="18sp"
+        android:padding="10dp"/>
+
+</LinearLayout>
